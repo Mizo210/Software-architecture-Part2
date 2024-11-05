@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Attendee
+comment1.params=id\ name\ email
+comment1.target=Attendee(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=session
+comment3.target=void\ trackAttendance(Session)
+comment4.params=
+comment4.target=java.util.List\ getPersonalizedSchedule()
+comment5.params=
+comment5.target=void\ createCertificate()
+comment6.params=session
+comment6.target=void\ addToSchedule(Session)
+comment7.params=sessionID
+comment7.target=Session\ searchSession(java.lang.String)
+numComments=8

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Session
+comment1.params=id\ name\ speaker\ date\ time\ room
+comment1.target=Session(java.lang.String,\ java.lang.String,\ Speaker,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getSessionID()
+comment3.params=attendee
+comment3.target=void\ registerAttendee(Attendee)
+comment4.params=
+comment4.target=java.lang.String\ getSessionDetails()
+comment5.params=
+comment5.target=java.lang.String\ getSpeakerBio()
+comment6.params=filename
+comment6.target=void\ saveAttendeesToFile(java.lang.String)
+comment7.params=filename
+comment7.target=void\ loadAttendeesFromFile(java.lang.String)
+numComments=8

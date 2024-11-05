@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Speaker
+comment1.params=name\ bio
+comment1.target=Speaker(java.lang.String,\ java.lang.String)
+comment2.params=session
+comment2.target=void\ assignSession(Session)
+comment3.params=
+comment3.target=java.lang.String\ getBio()
+comment4.params=filename
+comment4.target=void\ saveAttendeesToFile(java.lang.String)
+comment5.params=filename
+comment5.target=void\ loadSpeakersFromFile(java.lang.String)
+numComments=6
