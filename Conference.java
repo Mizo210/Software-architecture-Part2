@@ -19,6 +19,19 @@ public class Conference {
     public void registerAttendee(Attendee attendee) {
         attendees.add(attendee);
     }
+    
+    public List<Attendee> getAttendees() {
+        return attendees;
+    }
+    
+    public Attendee findAttendeeById(String attendeeID) {
+        for (Attendee attendee : attendees) {
+            if (attendee.getAttendee().equals(attendeeID)) {
+                return attendee;  
+            }
+        }
+        return null;  
+    }
 
     public void addSession(Session session) {
         sessions.add(session);

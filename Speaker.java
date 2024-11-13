@@ -1,15 +1,18 @@
 import java.util.*;
 import java.io.*;
 
-public class Speaker {
+public class Speaker extends Person{
+    private String SpeakerID;
     private String name;
     private String bio;
     private List<Session> sessions;
     private List<Speaker> speakers;
 
-    public Speaker(String name, String bio) {
+    public Speaker(String name, String bio, String ID) {
+        super(name,ID);
         this.name = name;
-        this.bio = bio;
+        this.bio = bio; 
+        this.SpeakerID = ID;
         this.sessions = new ArrayList<>();
         this.speakers = new ArrayList<>();
     }

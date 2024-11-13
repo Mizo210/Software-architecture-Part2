@@ -1,13 +1,15 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
 
-public class Attendee {
+public class Attendee extends Person {
     private String attendeeID;
     private String name;
     private String email;
     private List<Session> personalizedSchedule;
 
-    public Attendee(String id, String name, String email) {
-        this.attendeeID = id;
+    public Attendee(String ID, String name, String email) {
+        super(ID,name);
+        this.attendeeID = ID;
         this.name = name;
         this.email = email;
         this.personalizedSchedule = new ArrayList<>();
@@ -16,7 +18,10 @@ public class Attendee {
         public String getName() {
         return name;
     }
-
+    
+        public String getAttendee() {
+        return attendeeID;
+    }
 
     public void trackAttendance(Session session) {
         personalizedSchedule.add(session);
@@ -34,13 +39,14 @@ public class Attendee {
         personalizedSchedule.add(session);
     }
 
-    // Search for a session by ID in the attendee's schedule
+    
     public Session searchSession(String sessionID) {
         for (Session session : personalizedSchedule) {
             if (session.getSessionID().equals(sessionID)) {
                 return session;
             }
         }
-        return null; // Session not found
+        return null; 
     }
 }
+
